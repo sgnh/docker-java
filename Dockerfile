@@ -1,8 +1,8 @@
 FROM alpine
 
 RUN apk --update add curl ca-certificates tar && \
-    curl -Ls https://github.com/sgerrand/alpine-pkg-glibc/releases/download/2.23-r3/glibc-2.23-r3.apk > /tmp/glibc-2.23-r3.apk && \
-    apk add --allow-untrusted /tmp/glibc-2.23-r3.apk
+    curl -Ls https://github.com/sgerrand/alpine-pkg-glibc/releases/download/2.25-r0/glibc-2.25-r0.apk > /tmp/glibc-2.25-r0.apk && \
+    apk add --allow-untrusted /tmp/glibc-2.25-r0.apk
 
 ENV JAVA_VERSION_MAJOR 8
 ENV JAVA_VERSION_MINOR 112
